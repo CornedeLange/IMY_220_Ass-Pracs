@@ -1,6 +1,7 @@
 # IMY_220_Ass-Pracs
 
 Assignment 1: Functional JS, JS OOP, JS Arrays, and ES6 syntax
+
 Assignment 2:  NodeJs and NPM packages (Express and Socket.io)
 Assignment 3: React Basics (Creating and Using Components, Component State).
 Assignment 4: NodeJs and React, and React Intermediate (React Router, Component State).
