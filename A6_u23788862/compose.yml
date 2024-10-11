@@ -1,0 +1,32 @@
+name: docker-compose
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/postsdb
+    depends_on:
+      - mongo
+    networks:
+      - mongo-network
+
+  mongo:
+    image: mongo
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+     - mongo-network
+
+networks:
+  mongo-network: {}
+
+volumes:
+  mongo-data: {}

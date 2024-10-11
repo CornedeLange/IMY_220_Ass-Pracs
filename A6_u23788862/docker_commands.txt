@@ -1,0 +1,11 @@
+docker-compose up
+
+#To get container ID
+docker ps
+
+docker cp posts.json a27d070a9edf:/posts.json
+
+docker exec -it a27d070a9edf mongoimport --db imy_assignment_6 --collection posts --file /posts.json --jsonArray
+
+#to see changes in database using mongosh
+docker exec -it a27d070a9edf mongosh
