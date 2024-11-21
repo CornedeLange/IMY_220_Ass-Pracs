@@ -20,5 +20,8 @@ Practical 4: Create and serve a React application using Webpack and Express.
 
 Practical 5: Fetch data from MongoDB database and display events that fall within certain criteria.
 
+Practical 6: Simple Routing and Fetch calls
+
 
 npx webpack -w
+
